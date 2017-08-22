@@ -6,7 +6,7 @@ message Payload {
     string path = 1;
     HttpMethod method = 2;
     MultiMap headers = 3;
-    map<string, string> parameters = 4;
+    MultiMap parameters = 4;
     string queryString = 5;
     string body = 6;
 }
