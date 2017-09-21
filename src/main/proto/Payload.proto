@@ -9,6 +9,7 @@ message Payload {
     MultiMap parameters = 4;
     string queryString = 5;
     string body = 6;
+    sint64 flakeId = 7;
 }
 
 enum HttpMethod {
