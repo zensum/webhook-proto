@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package se.zensum.webhook;
+import "Payload.proto";
 
 message Response {
     string path = 1;
