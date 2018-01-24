@@ -11,11 +11,3 @@ message Response {
     string queryString = 6;
     fixed64 flakeId = 7;
 }
-
-message MultiMap {
-    message Pair {
-        string key = 1;
-        string value = 2;
-    }
-    repeated Pair pair = 1;
-}
