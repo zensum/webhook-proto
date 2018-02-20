@@ -10,6 +10,7 @@ message Payload {
     string queryString = 5;
     string body = 6;
     fixed64 flakeId = 7;
+    bool repeating = 8;
 }
 
 enum HttpMethod {

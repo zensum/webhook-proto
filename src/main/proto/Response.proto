@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package se.zensum.webhook;
+import "Payload.proto";
+
+message Response {
+    string path = 1;
+    bytes content = 2;
+    int32 statusCode = 3;
+    MultiMap headers = 4;
+    MultiMap cookies = 5;
+    string queryString = 6;
+    fixed64 flakeId = 7;
+}
